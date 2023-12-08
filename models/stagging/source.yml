@@ -1,0 +1,16 @@
+version: 2
+sources:
+- name: northwind
+  schema: aeCore # the source dataset we created in bigquery: lake house
+  tables:
+    - name: customer
+    - name: employee_privileges
+    - name: employees
+    - name: inventory_transaction_types
+    - name: inventory_transactions
+    - name: invoices
+    - name: order_details
+    - name: order_details_status
+    - name: orders
+    - name: orders_status
+    - name: orders_tax_status
