@@ -4,7 +4,10 @@
 WITH source AS (
     SELECT * FROM {{source('northwind', 'customer')}} 
 )
-SELECT * FROM source -- select all the records from the CTE table
+SELECT *, current_timestamp() AS ingestion_timestamp 
+FROM source -- select all the records from the CTE table and load 
+            -- to google bigquery and add a new column to keep track 
+            -- of when the data was loaded
 
 /*
     The source DB is 'northwind' and the table is 'customer'.

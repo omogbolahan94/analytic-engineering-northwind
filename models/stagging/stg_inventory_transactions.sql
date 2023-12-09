@@ -1,4 +1,5 @@
 WITH source AS (
     SELECT * FROM {{source('northwind', 'inventory_transactions')}} 
 )
-SELECT * FROM source
+SELECT *, current_timestamp() AS ingestion_timestamp 
+FROM source
