@@ -1,7 +1,7 @@
 at:
   outputs:
     dev:
-      dataset: dbt_stage # dataset in bigquery to hold data loaded from dbt
+      dataset: my_dbt # my_dbt will be appended with model schema name in BigQuery 
       job_execution_timeout_seconds: 300
       job_retries: 1
       location: europe-west2
