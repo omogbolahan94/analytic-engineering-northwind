@@ -1,0 +1,7 @@
+/*
+This is the table with columns of selected dim tables in the
+data warehouse.
+
+It is the OBT that contains informations about fact inventory relating to 
+product
+*/
